@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: dipa57/tetrisv2:latest
+        image: dipa57/tetrisv1:latest
         ports:
         - containerPort: 3000   # Use port 3000
 
@@ -31,4 +31,5 @@ spec:
   - protocol: TCP
     port: 80                 # Expose port 80
     targetPort: 3000
+
   type: LoadBalancer
